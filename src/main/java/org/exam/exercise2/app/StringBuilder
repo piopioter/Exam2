@@ -1,0 +1,7 @@
+ StringBuilder jest szybszy, gdyż jest modyfikowalny  jego obiekty  mogą rozszerzać swoją zawartość
+ (Wewnętrznie obiekty StringBuildera traktowane są jak tablice o zmiennej długości) dzięki temu nie generuje
+ niepotrzebnych obiektów tak jak to ma miejsce w konkatenacji stringów. Przez metodę append() dodajemy pewną
+ wartość do istniejącego ciągu.
+
+  StringBuilder będzie gorszy od konkatenacji Stringów w aplikacjach wielowątkowych oraz będzie bezpieczniejszy,
+  bo jest niemodyfikowalny.
